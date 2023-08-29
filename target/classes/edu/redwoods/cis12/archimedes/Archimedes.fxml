@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="320.0" prefWidth="640.0" stylesheets="@Archimedes.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.redwoods.cis12.archimedes.ArchimedesApplicationController">
+<left>
+    <VBox alignment="CENTER" spacing="20.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+         <Slider fx:id="sldrNumSides" blockIncrement="1.0" majorTickUnit="3.0" max="30.0" min="3.0" minorTickCount="2" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="3.0" VBox.vgrow="ALWAYS" />
+    </VBox>
+</left>
+<padding>
+    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+</padding>
+<center>
+    <Pane fx:id="drawingArea" prefHeight="480.0" prefWidth="480.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+        <BorderPane.margin>
+            <Insets left="8.0" />
+        </BorderPane.margin>
+    </Pane>
+</center>
+</BorderPane>
